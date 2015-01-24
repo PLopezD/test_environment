@@ -1,40 +1,57 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta http-equiv="X-UA-Compatible" content="IE=Edge">
-<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta charset="utf-8">
 
-<title>DeftDraft</title>
+    <title>tester</title>
 
-<!-- include jQuery library -->
+    <!-- include jQuery library -->
 
-<script src="http://code.jquery.com/jquery-latest.min.js"
-        type="text/javascript"></script>
-<!-- include Cycle plugin -->
-<link rel="stylesheet" href="style.css">
+    <script src="http://code.jquery.com/jquery-latest.min.js"
+    type="text/javascript"></script>
+    <!-- include Cycle plugin -->
+    <link rel="stylesheet" href="style.css"></link>
 
 </head>
 <body>
     <div id="container">
+        <h1> random header </h1>
         <h2>DD - <span id="buffers">Draft: <b>1</b>/1 - Commit: 0</span></h2>
-	<div class="drafts">
-            <textarea class="textarea mousetrap deft" id="esil"></textarea>
-            <textarea class="textarea mousetrap deft" id="isar"></textarea>
-	</div>
-        <p>Welcome. <em>DD</em> has two unique concepts you need to know about: drafts and commits.</p>
-        <p>Type some text. Then <em>hit ctrl-space</em>. You used the <b>scratch</b> command which: saves the current draft, starts a new draft at the last commit.</p>
-        <p>Type more text, then <b>scratch</b> again. Now <em>hit ctrl-h</em>. You are back to your second draft. Type some more text here, then <em>hit ctrl-h</em>. You are back to your first draft. <b>Cycle</b> in the other direction: <em>hit ctrl-l</em>.</p>
-        <p>The second draft was saved when you cycled away. Cycling between drafts is a powerful way to try out different sentences and pick the best.</p>
-        <p>Create some more drafts and practice cycling. Pick a favorite, then <em>hit ctrl-s</em>. This is your first <b>commit</b>. When you <b>commit</b> you are moving forward. Your previous drafts are cleared, and new drafts begin from the <b>commit</b>.</p>
-        <p>Try scratching and cycling from your new point of progress.</p>
-        <p>
-        <em>ctrl-space</em>: <b>scratch</b></br>
-        <em>ctrl-s</em>: <b>commit</b></br>
-        <em>ctrl-h</em>: <b>cycle</b> left</br>
-        <em>ctrl-l</em>: <b>cycle</b> right</br>
-        </p>
+        <!-- <em>ctrl-space</em>: <b>scratch</b></br> -->
+        <a href="#" id="contactlink"><em>contact us</em></a>
+
+        <div id="contactform">   
+            <form>
+                <label>name</label><br>
+                <textarea placeholder="name" id="name" name="name"></textarea><br>
+                <label>email</label><br>
+                <textarea placeholder="email" id="email" name="email"></textarea><br>
+                <label>message</label><br>
+                <textarea placeholder="message" id="message" name="message"></textarea><br>
+                <input type="submit" value="Submit">
+            </form>
+
+            <button id="cancel">cancel</button>
+        </div>
+        <div id="error">There is a problem with your form. Please update and resubmit.</div>
+        <ul>
+            <li class="cartItem" name="item-1"> potato <button id="add">addtocard</button></li> 
+            <li class="cartItem" name="item-2"> cup <button id="add">addtocard</button></li>
+            <li class="cartItem" name="item-3"> water <button id="add">addtocard</button></li>
+            <li  class="cartItem" name="item-4"> nail polish <button id="add">addtocard</button> </li>
+            <li class="cartItem" name="item-5"> math <button id="add">addtocard</button></li>
+        </ul>
+    </div>    
+    <div id="cart">
+        <p >Items</p>
+        <div class="items">
+        </div>
+
+        <p>total</p>
+        <div class="total">
+        </div>
     </div>
-    <div id="dd-nav"><a id="prev" href="#">Prev</a><a id="next" href="#">Next</a></div>
 </body>
 <script src="application.js"></script>
 </html>
