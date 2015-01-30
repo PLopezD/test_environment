@@ -1,9 +1,29 @@
-$( document ).ready(function() {
+$(document).ready(function() {
+	
 
+	var storeItems = []
+	function Item(name,cost){
+		this.name = name,
+		this.cost = cost
+
+	}
 	function Cart(items,total){
 		this.items = [],
 		this.total = 0
 	}
+	Cart.prototype.addItem = function(item){
+		this.items.push(item)
+		this.total = this.total + item.cost
+		refreshCart(this)
+	}
+	Cart.prototype.deleteItem = function(index){
+		var deletedItem = this.items[index]
+		this.items.splice(deletedItem,1)
+		this.total = this.total - item.cost
+		refreshCart(this)
+	}
+
+	var currentCart = new Cart
 
 	$("#contactlink").on('click', function(event) {
 		event.preventDefault();
@@ -15,16 +35,10 @@ $( document ).ready(function() {
 		toggleContact()
 	});
 
-	$.getJSON( "test.json", function( data ) {
-		var items = [];
-		$.each( data, function( key, val ) {
-			items.push( "<li id='" + key + "'>" + val + "</li>" );
-		});
 
-		$( "<ul/>", {
-			"class": "my-new-list",
-			html: items.join( "" )
-		}).appendTo( "body" );
+	$("#header").click(function(e) {
+		e.preventDefault()
+		console.log("this is where we test")
 	});
 
 	$("#contactform").submit(function(e){
@@ -52,6 +66,19 @@ $( document ).ready(function() {
 
 	});
 
+	$(".add").click( function(e){
+		e.preventDefault()
+		var itemIndex = ($(this).parent()[0].value - 1)
+		currentCart.addItem(storeItems[itemIndex])
+	})
+
+	var powerDelete = function(){
+		$(".delete").click( function(e){
+			e.preventDefault()
+			this.value
+
+		})
+	}
 
 	function toggleContact(){
 		var form = document.getElementById("contactform")
@@ -61,22 +88,56 @@ $( document ).ready(function() {
 			form.style.display = "block"
 		}
 	}
+	
 
+	function itemHTML(cart){
 
-	var current_cart = new Cart
-	current_cart.items.push("test")
-	console.log(current_cart)
-	console.log(current_cart.items)
-
-
-	var addItem = function(item){
-		cart.items.push(item.name)
-		cart.total = cart.total + item.cost
-		refreshCart()
 	}
 
-	function refreshCart(){
-		console.log("lol")
+	function refreshCart(cart){
+		var htmlArray = []				
+		var itemLength = cart.items.length							
+		var itemName = cart.items[itemLength-1].name
+		var itemCost = cart.items[itemLength-1].cost
+		$(".items").append("<li> $"+itemCost+"--"+itemName+ "<button class=delete value="+itemLength+">Delete From cart</button></li>")
+		powerDelete()
+		$(".total").html(cart.total)
 	}
 
-})
+	var defineItems = function (){
+		var data = [
+		{
+			"name": "potato",
+			"cost": 2
+		},
+		{
+			"name": "cup",
+			"cost": 5
+		},
+		{
+			"name": "water",
+			"cost": 1
+		},
+		{
+			"name": "nail polish",
+			"cost": 10
+		},
+		{
+			"name": "math",
+			"cost": 20
+		}
+		]
+		for(i = 0; i < data.length; i++){
+			var item = new Item(data[i].name,data[i].cost)
+			storeItems.push(item)
+		}
+		console.log(storeItems)
+	}();
+
+
+// $('li').click(function(){
+// 	var currentTimes = parseInt($(this).find("span").html())
+// 		$(this).find("span").html(currentTimes+1)
+// })
+});
+

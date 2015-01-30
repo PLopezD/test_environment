@@ -1,24 +1,53 @@
-{
-	"potato": {
+// data = '[
+// 	"potato" : {
+// 		"name": "potato",
+// 		"cost": 2
+// 	},
+// 	"cup":{
+// 		"name": "cup",
+// 		"cost": 5
+// 	},
+// 	"water":{
+// 		"name": "water",
+// 		"cost": 1
+// 	},
+// 	"nail polish":{
+// 		"name": "nail polish",
+// 		"cost": 10
+// 	},
+// 	"math":{
+// 		"name": "math",
+// 		"cost": 20
+// 	}
+// ]'
+	
+
+
+
+
+// data = '[{"name" : "Harry", "age" : "32"}]';
+
+
+
+		data = [
+	{
 		"name": "potato",
 		"cost": 2
 	},
-	"cup":{
+	{
 		"name": "cup",
 		"cost": 5
 	},
-	"water":{
+	{
 		"name": "water",
 		"cost": 1
 	},
-	"nail polish":{
+	{
 		"name": "nail polish",
 		"cost": 10
 	},
-	"math":{
+	{
 		"name": "math",
 		"cost": 20
 	}
-
-
-}
+]
