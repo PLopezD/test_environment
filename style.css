@@ -1,0 +1,17 @@
+#container {
+	background-color: yellow
+}
+
+#side{
+	background-color: lightgreen;
+	border: 1px solid rgba(0,0,0,0.15);
+	/*background-color: white;*/
+	margin-top: 20px;
+	overflow-y: scroll;
+	position: fixed;
+	top: 7%;
+	left: 80%;
+	width: 300px;
+	height: 600px;
+	z-index: -51  ;
+}
