@@ -22,8 +22,7 @@
     "gulp-sass": "^2.0.4",
     "gulp-uglify": "^0.3.0",
     "gulp-util": "^2.2.14",
-    "jquery": "^2.2.4",
-    "mustache": "^0.8.1"
+    "jquery": "^2.2.4"
   },
   "dependencies": {
     "cookie-parser": "^1.4.3",
