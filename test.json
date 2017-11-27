@@ -1,0 +1,237 @@
+[
+  {
+    "_id": "56eac17328d2f52337d165d0",
+    "index": 0,
+    "guid": "0d7c121d-ab93-4e64-951e-16efaab8ed54",
+    "isActive": false,
+    "balance": "$2,889.94",
+    "picture": "http://placehold.it/32x32",
+    "age": 37,
+    "eyeColor": "green",
+    "name": {
+      "first": "Riddle",
+      "last": "Frederick"
+    },
+    "company": "EWAVES",
+    "email": "riddle.frederick@ewaves.me",
+    "phone": "+1 (989) 532-3680",
+    "address": "722 Sackman Street, Staples, American Samoa, 9354",
+    "about": "Officia tempor ullamco proident incididunt aute excepteur officia ad do non. Laborum laboris qui nisi Lorem velit qui velit proident tempor tempor esse. Velit tempor voluptate Lorem sint aliquip deserunt sint voluptate esse.",
+    "registered": "Sunday, August 2, 2015 5:10 PM",
+    "latitude": "8.740247",
+    "longitude": "129.568105",
+    "tags": [
+      7,
+      "aute"
+    ],
+    "range": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "friends": [
+      3,
+      {
+        "id": 1,
+        "name": "Bradford Williams"
+      }
+    ],
+    "greeting": "Hello, Riddle! You have 8 unread messages.",
+    "favoriteFruit": "strawberry"
+  },
+  {
+    "_id": "56eac17338e694e495b13d04",
+    "index": 1,
+    "guid": "2c3bcdec-3bfb-40ae-922e-d4d624b1d232",
+    "isActive": false,
+    "balance": "$2,575.53",
+    "picture": "http://placehold.it/32x32",
+    "age": 25,
+    "eyeColor": "green",
+    "name": {
+      "first": "Marks",
+      "last": "Merrill"
+    },
+    "company": "ZEROLOGY",
+    "email": "marks.merrill@zerology.org",
+    "phone": "+1 (810) 515-2883",
+    "address": "708 Conover Street, Greenock, Alabama, 8511",
+    "about": "Minim ad ea et mollit minim est incididunt. Ut sunt exercitation enim id nulla quis. Ullamco tempor quis proident minim sunt nostrud nostrud consequat est. Nulla eu deserunt cillum in exercitation veniam officia duis minim aliqua reprehenderit consectetur. Laborum officia aliqua aliquip quis Lorem est commodo proident qui in excepteur et qui esse.",
+    "registered": "Sunday, April 12, 2015 7:15 AM",
+    "latitude": "-26.498443",
+    "longitude": "43.783677",
+    "tags": [
+      7,
+      "aute"
+    ],
+    "range": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "friends": [
+      3,
+      {
+        "id": 1,
+        "name": "Bradford Williams"
+      }
+    ],
+    "greeting": "Hello, Marks! You have 9 unread messages.",
+    "favoriteFruit": "apple"
+  },
+  {
+    "_id": "56eac173b33387f19cbdbe03",
+    "index": 2,
+    "guid": "3db770cb-bb99-4530-b78c-e69a9633e66b",
+    "isActive": true,
+    "balance": "$2,102.06",
+    "picture": "http://placehold.it/32x32",
+    "age": 30,
+    "eyeColor": "brown",
+    "name": {
+      "first": "Sophie",
+      "last": "Stafford"
+    },
+    "company": "ICOLOGY",
+    "email": "sophie.stafford@icology.name",
+    "phone": "+1 (894) 599-2359",
+    "address": "822 Walker Court, Wildwood, Ohio, 8279",
+    "about": "Laboris proident nisi ex pariatur duis sint in adipisicing dolor nulla cupidatat anim. Et sunt in irure veniam eu qui eiusmod. Elit tempor dolore laboris mollit id sit commodo proident est. Duis ad exercitation laboris mollit fugiat ullamco ex sit esse. Et dolor quis laborum labore quis velit irure. Eu nostrud exercitation nostrud veniam labore proident aliqua dolore aliqua duis occaecat in officia.",
+    "registered": "Tuesday, April 28, 2015 9:22 PM",
+    "latitude": "43.390835",
+    "longitude": "-61.524771",
+    "tags": [
+      7,
+      "aute"
+    ],
+    "range": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "friends": [
+      3,
+      {
+        "id": 1,
+        "name": "Bradford Williams"
+      }
+    ],
+    "greeting": "Hello, Sophie! You have 5 unread messages.",
+    "favoriteFruit": "banana"
+  },
+  {
+    "_id": "56eac1736e58606a41d6c949",
+    "index": 3,
+    "guid": "065427cf-f126-43b9-ba26-11b5f9c874b4",
+    "isActive": true,
+    "balance": "$1,395.11",
+    "picture": "http://placehold.it/32x32",
+    "age": 24,
+    "eyeColor": "blue",
+    "name": {
+      "first": "Rosales",
+      "last": "Forbes"
+    },
+    "company": "JAMNATION",
+    "email": "rosales.forbes@jamnation.io",
+    "phone": "+1 (991) 556-3496",
+    "address": "276 Devon Avenue, Hannasville, Maine, 1440",
+    "about": "Velit voluptate occaecat sit ex consequat voluptate aliquip voluptate. Dolor aliqua sit consectetur ipsum ad sint est consequat anim. Nostrud officia sunt Lorem sint tempor aliqua adipisicing pariatur incididunt. Quis veniam Lorem nulla Lorem. Officia ad tempor quis cupidatat mollit nisi exercitation irure. Ea ullamco ut laboris ad et non cillum sint ipsum est velit non nostrud magna. Eu laborum deserunt esse qui velit et officia ex.",
+    "registered": "Thursday, March 5, 2015 4:34 AM",
+    "latitude": "-3.504026",
+    "longitude": "-82.699965",
+    "tags": [
+      7,
+      "aute"
+    ],
+    "range": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "friends": [
+      3,
+      {
+        "id": 1,
+        "name": "Bradford Williams"
+      }
+    ],
+    "greeting": "Hello, Rosales! You have 10 unread messages.",
+    "favoriteFruit": "banana"
+  },
+  {
+    "_id": "56eac1737776070f3e0394fc",
+    "index": 4,
+    "guid": "53b28006-d5f9-41db-bbd2-63b961ffb49b",
+    "isActive": true,
+    "balance": "$1,400.59",
+    "picture": "http://placehold.it/32x32",
+    "age": 39,
+    "eyeColor": "brown",
+    "name": {
+      "first": "Roman",
+      "last": "Rogers"
+    },
+    "company": "ZIALACTIC",
+    "email": "roman.rogers@zialactic.net",
+    "phone": "+1 (949) 442-2996",
+    "address": "802 Abbey Court, Hollins, Virgin Islands, 4915",
+    "about": "Consequat eiusmod magna adipisicing sint nostrud duis occaecat occaecat cillum magna irure excepteur. Adipisicing laboris dolore eu aliqua non occaecat do irure aliquip esse fugiat elit. Magna aliquip ad amet quis culpa esse excepteur fugiat excepteur.",
+    "registered": "Saturday, September 13, 2014 6:22 AM",
+    "latitude": "49.277636",
+    "longitude": "157.735497",
+    "tags": [
+      7,
+      "aute"
+    ],
+    "range": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "friends": [
+      3,
+      {
+        "id": 1,
+        "name": "Bradford Williams"
+      }
+    ],
+    "greeting": "Hello, Roman! You have 10 unread messages.",
+    "favoriteFruit": "apple"
+  }
+]

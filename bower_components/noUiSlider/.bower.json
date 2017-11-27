@@ -1,0 +1,11 @@
+{
+  "name": "noUiSlider",
+  "_cacheHeaders": {
+    "Content-Type": "text/html; charset=utf-8"
+  },
+  "main": "index",
+  "_source": "https://github.com/leongersen/noUiSlider",
+  "_target": "*",
+  "_originalSource": "https://github.com/leongersen/noUiSlider",
+  "_direct": true
+}

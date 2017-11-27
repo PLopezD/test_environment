@@ -22,7 +22,15 @@
     "gulp-sass": "^2.0.4",
     "gulp-uglify": "^0.3.0",
     "gulp-util": "^2.2.14",
-    "jquery": "^2.1.1",
+    "jquery": "^2.2.4",
     "mustache": "^0.8.1"
+  },
+  "dependencies": {
+    "fitbit-node": "^2.0.5",
+    "jsdom": "^11.3.0",
+    "lodash": "^4.17.4",
+    "node-fetch": "^1.7.3",
+    "sass-convert": "^0.5.2",
+    "scss-to-json": "^2.0.0"
   }
 }
