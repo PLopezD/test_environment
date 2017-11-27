@@ -1,36 +1,34 @@
-let express  = require('express');
-let app      = express();
-let path    = require('path');
-
+var express = require('express');
+var app = express();
 let morgan       = require('morgan');
 let cookieParser = require('cookie-parser');
 let bodyParser   = require('body-parser');
-let session      = require('express-session');
 
-let config = require('./config/config.js');
-
-// configuration ===============================================================
-mongoose.connect(config.db.url); // connect to our database
-
-require('./config/passport')(passport); // pass passport for configuration
 
 app.use(morgan('dev')); 
 app.use(cookieParser()); 
 app.use(bodyParser()); 
 
+var cors = function(request, response, next) {
+  response.header('Access-Control-Allow-Origin', '*');
+  response.header('Access-Control-Allow-Methods', 'GET, PUT, POST, DELETE');
+  response.header('Access-Control-Allow-Headers', 'Content-Type,Authorization,Mcpi-Href-Expand');
+  next();
+}
 
-app.use("/public", express.static(path.join(__dirname, 'public')));
+app.use(cors);
 
-app.set('view engine', 'ejs');
+// serve the files out of ./public as our main files
+app.use(express.static(__dirname + '/dist'));
+app.use('/bower_components',  express.static(__dirname + '/bower_components'));
+// start server on the specified port and binding host
+app.get('/', function(req, res){
+  res.json({"test":"yes"})
+});
 
+var port = 2000
+app.listen(port, function() {
+  // print a message when the server starts listening
+  console.log("server starting on " + port);
+});
 
-app.use(session({ secret: 'worblo' })); 
-app.use(passport.initialize());
-app.use(passport.session()); 
-app.use(flash()); 
-
-// routes ======================================================================
-require('./app/routes.js')(app, passport); 
-
-
-module.exports = app;
