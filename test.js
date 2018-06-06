@@ -1,7 +1,7 @@
 var _ = require('lodash')
-// gg
+// gg123
 
-widgets = [ 
+widgets = [
   { x: 4, y: 0, cols: 8, rows: 1, id: 2 },
   { x: 0, y: 0, cols: 4, rows: 1, id: 1 },
   { x: 0, y: 2, cols: 6, rows: 2, id: 5 },
@@ -23,7 +23,7 @@ calcPosition = (widgets) => {
     let calcNextCoords = (coord, prevWidget) => {
         if (!prevWidget) {return coord}
         coord.x += prevWidget.cols
-        if (coord.x >= 12) {coord.x = 0; coord.y += 1} 
+        if (coord.x >= 12) {coord.x = 0; coord.y += 1}
         return coord
     }
 
@@ -38,20 +38,18 @@ calcPosition = (widgets) => {
                     prevWidget = liveWidget
                     position++
                 } else {
-                    prevWidget = undefined 
+                    prevWidget = undefined
                     coord.y += 1
-                    coord.x = 0 
+                    coord.x = 0
                 }
                 if (throwCheck > 100) { throw error }
             }
             return finalArray
         }
         catch (e) {
-            console.log(e)   
+            console.log(e)
             return widgets
         }
 }
 
 console.log(calcPosition(widgets))
-
-
